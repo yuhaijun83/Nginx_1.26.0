@@ -98,7 +98,7 @@ Configuration summary</br>
 user@hostname MSYS ~/Nginx_1.26.0</br>
 $</br>
 </br>
-六、Build:</br>
+六、Build:(Windows 11 Pro 23H2 + Visual Studio 2022 Enterprise)</br>
 **********************************************************************</br>
 ** Visual Studio 2022 Developer Command Prompt v17.9.6</br>
 ** Copyright (c) 2022 Microsoft Corporation</br>
