@@ -47,7 +47,7 @@ iphp->addrlen = 4;</br>
 </br>
 
 五、Configure:</br>
-\<user\>@\<hostname\> MSYS ~/Nginx_1.26.0</br>
+user@hostname MSYS ~/Nginx_1.26.0</br>
 $ auto/configure \\</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    --with-cc=cl \\</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    --with-debug \\</br>
@@ -95,7 +95,7 @@ Configuration summary</br>
   nginx http scgi temporary files: "temp/scgi_temp"</br>
 </br>
 </br>
-\<user\>@\<hostname\> MSYS ~/Nginx_1.26.0</br>
+user@hostname MSYS ~/Nginx_1.26.0</br>
 $</br>
 </br>
 六、Build:</br>
