@@ -1,0 +1,883 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.sf3b2i {color: #ababab; background-color: #ffffff; }
+.sf3b5i {color: #005190; background-color: #0078d7; }
+.sf3b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf3b16i {color: #a19774; background-color: #f1e2ad; }
+.sf3b18i {color: #ab7257; background-color: #ffaa82; }
+.sf3b19i {color: #865749; background-color: #c8816c; }
+.sf6b2i {color: #ffffff; background-color: #ffffff; }
+.sf6b5i {color: #54a4e4; background-color: #0078d7; }
+.sf6b14i {color: #ffbfbf; background-color: #ffa0a0; }
+.sf6b16i {color: #f5ebc8; background-color: #f1e2ad; }
+.sf6b18i {color: #ffc6ab; background-color: #ffaa82; }
+.sf6b19i {color: #daaa9c; background-color: #c8816c; }
+.sf7b2i {color: #ababff; background-color: #ffffff; font-weight: bold; }
+.sf7b5i {color: #0051e4; background-color: #0078d7; font-weight: bold; }
+.sf7b14i {color: #ab6bbf; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16i {color: #a197c8; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18i {color: #ab72ab; background-color: #ffaa82; font-weight: bold; }
+.sf7b19i {color: #86579c; background-color: #c8816c; font-weight: bold; }
+.sf8b2i {color: #d5abd5; background-color: #ffffff; }
+.sf8b5i {color: #2a51bb; background-color: #0078d7; }
+.sf8b14i {color: #d56b96; background-color: #ffa0a0; }
+.sf8b16i {color: #cc979f; background-color: #f1e2ad; }
+.sf8b18i {color: #d57282; background-color: #ffaa82; }
+.sf8b19i {color: #b15772; background-color: #c8816c; }
+.sf9b2i {color: #abd5ab; background-color: #ffffff; }
+.sf9b5i {color: #007a90; background-color: #0078d7; }
+.sf9b14i {color: #ab966b; background-color: #ffa0a0; }
+.sf9b16i {color: #a1c274; background-color: #f1e2ad; }
+.sf9b18i {color: #ab9d57; background-color: #ffaa82; }
+.sf9b19i {color: #868149; background-color: #c8816c; }
+.sf10b2i {color: #ffabab; background-color: #ffffff; }
+.sf10b5i {color: #545190; background-color: #0078d7; }
+.sf10b14i {color: #ff6b6b; background-color: #ffa0a0; }
+.sf10b16i {color: #f59774; background-color: #f1e2ad; }
+.sf10b18i {color: #ff7257; background-color: #ffaa82; }
+.sf10b19i {color: #da5749; background-color: #c8816c; }
+.sf11b2i {color: #cbcbcb; background-color: #ffffff; }
+.sf11b5i {color: #1f71b0; background-color: #0078d7; }
+.sf11b14i {color: #cb8b8b; background-color: #ffa0a0; }
+.sf11b16i {color: #c1b794; background-color: #f1e2ad; }
+.sf11b18i {color: #cb9277; background-color: #ffaa82; }
+.sf11b19i {color: #a67769; background-color: #c8816c; }
+.sf12b2i {color: #d5abab; background-color: #ffffff; }
+.sf12b5i {color: #2a5190; background-color: #0078d7; }
+.sf12b14i {color: #d56b6b; background-color: #ffa0a0; }
+.sf12b16i {color: #cc9774; background-color: #f1e2ad; }
+.sf12b18i {color: #d57257; background-color: #ffaa82; }
+.sf12b19i {color: #b15749; background-color: #c8816c; }
+.sf13b2i {color: #abd5eb; background-color: #ffffff; }
+.sf13b5i {color: #007ad0; background-color: #0078d7; }
+.sf13b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf13b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf13b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf13b19i {color: #868187; background-color: #c8816c; }
+.sf15b2i {color: #ababab; background-color: #ffffff; }
+.sf15b5i {color: #005190; background-color: #0078d7; }
+.sf15b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf15b16i {color: #a19774; background-color: #f1e2ad; }
+.sf15b18i {color: #ab7257; background-color: #ffaa82; }
+.sf15b19i {color: #865749; background-color: #c8816c; }
+.sf17b2i {color: #ababab; background-color: #ffffff; }
+.sf17b5i {color: #005190; background-color: #0078d7; }
+.sf17b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf17b16i {color: #a19774; background-color: #f1e2ad; }
+.sf17b18i {color: #ab7257; background-color: #ffaa82; }
+.sf17b19i {color: #865749; background-color: #c8816c; }
+.sf20b2i {color: #ababd5; background-color: #ffffff; }
+.sf20b5i {color: #0051bb; background-color: #0078d7; }
+.sf20b14i {color: #ab6b96; background-color: #ffa0a0; }
+.sf20b16i {color: #a1979f; background-color: #f1e2ad; }
+.sf20b18i {color: #ab7282; background-color: #ffaa82; }
+.sf20b19i {color: #865772; background-color: #c8816c; }
+.sf21b2i {color: #abd5eb; background-color: #ffffff; }
+.sf21b5i {color: #007ad0; background-color: #0078d7; }
+.sf21b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf21b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf21b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf21b19i {color: #868187; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<colgroup>
+<col style="width: 2.5em;" />
+<col style="width: calc(100vw / 2 - 2.5em);" />
+<col style="width: 2.5em;" />
+<col style="width: calc(100vw / 2 - 2.5em);" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" class="title">C:\msys64\home\nelco\nginx-release-1.26.0\auto\cc\msvc</th>
+<th colspan="2" class="title">C:\msys64\home\nelco\Nginx_1.26.0\auto\cc\msvc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">1</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2"># Copyright (C) Igor Sysoev</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2"># Copyright (C) Igor Sysoev</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2"># Copyright (C) Nginx, Inc.</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2"># Copyright (C) Nginx, Inc.</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">4</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">5</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 6.0 SP2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 12.00</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 6.0 SP2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 12.00</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2"># MSVC Toolkit 2003 (7.1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cl 13.10</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2"># MSVC Toolkit 2003 (7.1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cl 13.10</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2005 Express Edition SP1 (8.0) &nbsp; &nbsp; cl 14.00</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2005 Express Edition SP1 (8.0) &nbsp; &nbsp; cl 14.00</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2008 Express Edition (9.0) &nbsp; &nbsp; &nbsp; &nbsp; cl 15.00</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2008 Express Edition (9.0) &nbsp; &nbsp; &nbsp; &nbsp; cl 15.00</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2010 (10.0) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 16.00</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2010 (10.0) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 16.00</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2015 (14.0) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 19.00</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2015 (14.0) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 19.00</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">12</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "># MSVC 2022 (17.9.6) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cl 19.39.33523</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">13</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">14</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">NGX_MSVC_VER=`$NGX_WINE $CC 2&gt;&amp;1 | grep 'C/C++.* [0-9][0-9]*\.[0-9]' 2&gt;&amp;1 \</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">NGX_MSVC_VER=`$NGX_WINE $CC 2&gt;&amp;1 | grep 'C/C++.* [0-9][0-9]*\.[0-9]' 2&gt;&amp;1 \</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| sed -e 's/^.* \([0-9][0-9]*\.[0-9].*\)/\1/'`</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| sed -e 's/^.* \([0-9][0-9]*\.[0-9].*\)/\1/'`</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">17</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2">echo " + cl version: $NGX_MSVC_VER"</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">echo " + cl version: $NGX_MSVC_VER"</span></code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">19</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2">have=NGX_COMPILER value="\"cl $NGX_MSVC_VER\"" . auto/define</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">have=NGX_COMPILER value="\"cl $NGX_MSVC_VER\"" . auto/define</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">21</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">22</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">ngx_msvc_ver=`echo $NGX_MSVC_VER | sed -e 's/^\([0-9]*\).*/\1/'`</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">ngx_msvc_ver=`echo $NGX_MSVC_VER | sed -e 's/^\([0-9]*\).*/\1/'`</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">24</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">25</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2"># detect x64 builds</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf3b2"># detect x64 builds</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">27</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2">case "$NGX_MSVC_VER" in</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">case "$NGX_MSVC_VER" in</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">29</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; *x64)</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; *x64)</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; NGX_MACHINE=amd64</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; NGX_MACHINE=amd64</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">33</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; *)</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; *)</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; NGX_MACHINE=i386</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; NGX_MACHINE=i386</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">37</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2">esac</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">esac</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">39</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">40</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2"># optimizations</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2"># optimizations</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">42</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2"># maximize speed, equivalent to -Og -Oi -Ot -Oy -Ob2 -Gs -GF -Gy</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2"># maximize speed, equivalent to -Og -Oi -Ot -Oy -Ob2 -Gs -GF -Gy</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -O2"</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -O2"</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">45</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2"># enable global optimization</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2"># enable global optimization</span></code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Og"</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Og"</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2"># enable intrinsic functions</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2"># enable intrinsic functions</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Oi"</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Oi"</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">50</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2"># disable inline expansion</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2"># disable inline expansion</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Ob0"</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Ob0"</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2"># explicit inline expansion</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2"># explicit inline expansion</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Ob1"</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Ob1"</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2"># explicit and implicit inline expansion</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2"># explicit and implicit inline expansion</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Ob2"</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Ob2"</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">57</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2"># enable frame pointer omission</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2"># enable frame pointer omission</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Oy"</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Oy"</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2"># disable stack checking calls</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2"># disable stack checking calls</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Gs"</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Gs"</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">62</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2"># pools strings as read/write</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2"># pools strings as read/write</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Gf"</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -Gf"</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2"># pools strings as read-only</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2"># pools strings as read-only</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -GF"</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">#CFLAGS="$CFLAGS -GF"</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">67</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">68</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2">case $CPU in</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">case $CPU in</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; pentium)</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; pentium)</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; # optimize for Pentium and Athlon</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; # optimize for Pentium and Athlon</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CPU_OPT="-G5"</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CPU_OPT="-G5"</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">74</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; pentiumpro)</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; pentiumpro)</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; # optimize for Pentium Pro, Pentium II and Pentium III</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; # optimize for Pentium Pro, Pentium II and Pentium III</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CPU_OPT="-G6"</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CPU_OPT="-G6"</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">79</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; pentium4)</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; pentium4)</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; # optimize for Pentium 4, MSVC 7</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; # optimize for Pentium 4, MSVC 7</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CPU_OPT="-G7"</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CPU_OPT="-G7"</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; ;;</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2">esac</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2">esac</span></code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">85</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2"># __cdecl, default, must be used with OpenSSL, md5 asm, and sha1 asm</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2"># __cdecl, default, must be used with OpenSSL, md5 asm, and sha1 asm</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">#CPU_OPT="$CPU_OPT -Gd"</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">#CPU_OPT="$CPU_OPT -Gd"</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2"># __stdcall</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2"># __stdcall</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">#CPU_OPT="$CPU_OPT -Gz"</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">#CPU_OPT="$CPU_OPT -Gz"</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2"># __fastcall</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2"># __fastcall</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">#CPU_OPT="$CPU_OPT -Gr"</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">#CPU_OPT="$CPU_OPT -Gr"</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">92</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">93</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS $CPU_OPT"</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS $CPU_OPT"</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">95</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">96</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2"># warnings</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2"># warnings</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">98</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -W4"</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -W4"</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">100</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2"># stop on warning</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2"># stop on warning</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -WX"</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -WX"</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">103</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2"># disable logo</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2"># disable logo</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -nologo"</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS -nologo"</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">106</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2"># the link flags</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2"># the link flags</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">CORE_LINK="$CORE_LINK -link -verbose:lib"</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">CORE_LINK="$CORE_LINK -link -verbose:lib"</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">109</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2"># link with libcmt.lib, multithreaded</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2"># link with libcmt.lib, multithreaded</span></code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">LIBC="-MT"</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">LIBC="-MT"</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2"># link with msvcrt.dll</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2"># link with msvcrt.dll</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2"># however, MSVC Toolkit 2003 has no MSVCRT.LIB</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2"># however, MSVC Toolkit 2003 has no MSVCRT.LIB</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf3b2">#LIBC="-MD"</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">#LIBC="-MD"</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">115</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS $LIBC"</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2">CFLAGS="$CFLAGS $LIBC"</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">117</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">CORE_LIBS="$CORE_LIBS kernel32.lib user32.lib"</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">CORE_LIBS="$CORE_LIBS kernel32.lib user32.lib"</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">119</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2"># Win32 GUI mode application</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2"># Win32 GUI mode application</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2">#CORE_LINK="$CORE_LINK -subsystem:windows -entry:mainCRTStartup"</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">#CORE_LINK="$CORE_LINK -subsystem:windows -entry:mainCRTStartup"</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">122</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2"># debug</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2"># debug</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2"># msvc under Wine issues</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2"># msvc under Wine issues</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2"># C1902: Program database manager mismatch; please check your installation</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2"># C1902: Program database manager mismatch; please check your installation</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2">if [ -z "$NGX_WINE" ]; then</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">if [ -z "$NGX_WINE" ]; then</span></code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp;CFLAGS="$CFLAGS -Zi -Fd$NGX_OBJS/nginx.pdb"</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp;CFLAGS="$CFLAGS -Zi -Fd$NGX_OBJS/nginx.pdb"</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp;CORE_LINK="$CORE_LINK -debug"</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp;CORE_LINK="$CORE_LINK -debug"</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">fi</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">fi</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">130</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">130</a></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln">131</td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">ngx_msvc_ver=17</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2005 supports C99 variadic macros</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2"># MSVC 2005 supports C99 variadic macros</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">if [ "$ngx_msvc_ver" -ge 14 ]; then</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">if [ "$ngx_msvc_ver" -ge 14 ]; then</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; have=NGX_HAVE_C99_VARIADIC_MACROS . auto/have</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; have=NGX_HAVE_C99_VARIADIC_MACROS . auto/have</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">fi</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">fi</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">136</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">137</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2"># precompiled headers</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2"># precompiled headers</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">CORE_DEPS="$CORE_DEPS $NGX_OBJS/ngx_config.pch"</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">CORE_DEPS="$CORE_DEPS $NGX_OBJS/ngx_config.pch"</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">CORE_LINK="$CORE_LINK $NGX_OBJS/ngx_pch.obj"</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">CORE_LINK="$CORE_LINK $NGX_OBJS/ngx_pch.obj"</span></code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">NGX_PCH="$NGX_OBJS/ngx_config.pch"</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">NGX_PCH="$NGX_OBJS/ngx_config.pch"</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">NGX_BUILD_PCH="-Ycngx_config.h -Fp$NGX_OBJS/ngx_config.pch"</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">NGX_BUILD_PCH="-Ycngx_config.h -Fp$NGX_OBJS/ngx_config.pch"</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">NGX_USE_PCH="-Yungx_config.h -Fp$NGX_OBJS/ngx_config.pch"</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">NGX_USE_PCH="-Yungx_config.h -Fp$NGX_OBJS/ngx_config.pch"</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">144</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">145</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2"># the resource file</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2"># the resource file</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">NGX_RES="$NGX_OBJS/nginx.res"</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">NGX_RES="$NGX_OBJS/nginx.res"</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">NGX_RCC="rc -fo$NGX_RES \$(CORE_INCS) $NGX_WIN32_RC"</span></code></td>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">NGX_RCC="rc -fo$NGX_RES \$(CORE_INCS) $NGX_WIN32_RC"</span></code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">CORE_LINK="$NGX_RES $CORE_LINK"</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">CORE_LINK="$NGX_RES $CORE_LINK"</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">150</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">151</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code><span class="sf3b2"># dynamic modules</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2"># dynamic modules</span></code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">#MAIN_LINK="-link -def:$NGX_OBJS/nginx.def"</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">#MAIN_LINK="-link -def:$NGX_OBJS/nginx.def"</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">#MODULE_LINK="-LD $NGX_OBJS/nginx.lib"</span></code></td>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">#MODULE_LINK="-LD $NGX_OBJS/nginx.lib"</span></code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">155</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">156</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">ngx_pic_opt=</span></code></td>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">ngx_pic_opt=</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">ngx_objout="-Fo"</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">ngx_objout="-Fo"</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">ngx_binout="-Fe"</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">ngx_binout="-Fe"</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">ngx_objext="obj"</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">ngx_objext="obj"</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">161</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_start='@&lt;&lt;</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_start='@&lt;&lt;</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; '</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; '</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_end='&lt;&lt;'</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_end='&lt;&lt;'</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_regex_cont=' \</span></code></td>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_regex_cont=' \</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; '</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; '</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_cont='</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">ngx_long_cont='</span></code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; '</span></code></td>
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; '</span></code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">169</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2"># MSVC understand / in path</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2"># MSVC understand / in path</span></code></td>
+</tr>
+<tr>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">#ngx_regex_dirsep='\\'</span></code></td>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">#ngx_regex_dirsep='\\'</span></code></td>
+</tr>
+<tr>
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2">#ngx_dirsep="\\"</span></code></td>
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2">#ngx_dirsep="\\"</span></code></td>
+</tr>
+<tr>
+<td class="ln">172</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">173</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+nelco@P602304008 MSYS ~/Nginx_1.26.0
+$ cd objs/lib
+
+nelco@P602304008 MSYS ~/Nginx_1.26.0/objs/lib
+$ tar -xzf openssl-3.0.13.tar.gz
+
+nelco@P602304008 MSYS ~/Nginx_1.26.0/objs/lib
+$ tar -xzf pcre2-10.39.tar.gz
+
+nelco@P602304008 MSYS ~/Nginx_1.26.0/objs/lib
+$ tar -xzf zlib-1.3.1.tar.gz
+
+nelco@P602304008 MSYS ~/Nginx_1.26.0/objs/lib
+$ cd ../..
+
+nelco@P602304008 MSYS ~/Nginx_1.26.0
+$ auto/configure \
+    --with-cc=cl \
+    --with-debug \
+    --prefix= \
+    --conf-path=conf/nginx.conf \
+    --pid-path=logs/nginx.pid \
+    --http-log-path=logs/access.log \
+    --error-log-path=logs/error.log \
+    --sbin-path=nginx.exe \
+    --http-client-body-temp-path=temp/client_body_temp \
+    --http-proxy-temp-path=temp/proxy_temp \
+    --http-fastcgi-temp-path=temp/fastcgi_temp \
+    --http-scgi-temp-path=temp/scgi_temp \
+    --http-uwsgi-temp-path=temp/uwsgi_temp \
+    --with-cc-opt=-DFD_SETSIZE=1024 \
+    --with-pcre=objs/lib/pcre2-10.39 \
+    --with-zlib=objs/lib/zlib-1.3.1 \
+    --with-openssl=objs/lib/openssl-3.0.13 \
+    --with-openssl-opt=no-asm \
+    --with-http_ssl_module
+checking for OS
+ + MSYS_NT-10.0-22631 3.5.3.x86_64 x86_64
+ + using Microsoft Visual C++ compiler
+ + cl version:
+checking for MSYS_NT-10.0-22631 specific features
+creating objs/Makefile
+
+Configuration summary
+  + using PCRE2 library: objs/lib/pcre2-10.39
+  + using OpenSSL library: objs/lib/openssl-3.0.13
+  + using zlib library: objs/lib/zlib-1.3.1
+
+  nginx path prefix: ""
+  nginx binary file: "/nginx.exe"
+  nginx modules path: "/modules"
+  nginx configuration prefix: "/conf"
+  nginx configuration file: "/conf/nginx.conf"
+  nginx pid file: "/logs/nginx.pid"
+  nginx error log file: "/logs/error.log"
+  nginx http access log file: "/logs/access.log"
+  nginx http client request body temporary files: "temp/client_body_temp"
+  nginx http proxy temporary files: "temp/proxy_temp"
+  nginx http fastcgi temporary files: "temp/fastcgi_temp"
+  nginx http uwsgi temporary files: "temp/uwsgi_temp"
+  nginx http scgi temporary files: "temp/scgi_temp"
+
+
+nelco@P602304008 MSYS ~/Nginx_1.26.0
+$

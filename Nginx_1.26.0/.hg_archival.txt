@@ -1,0 +1,4 @@
+repo: 4eff17414a4378feaba42876e0d3a6a50646cdee
+node: a58202a8c41bf0bd97eef1b946e13105a105520d
+branch: stable-1.26
+tag: release-1.26.0
