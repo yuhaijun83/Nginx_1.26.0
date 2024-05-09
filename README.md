@@ -19,7 +19,7 @@ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.39/pcre2-10.39.
 三、Build Tools:</br>
 https://github.com/msys2/msys2-installer/releases/download/2024-05-07/msys2-x86_64-20240507.exe</br>
 https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_53822_64bit/strawberry-perl-5.38.2.2-64bit.msi</br>
-https://www.mercurial-scm.org/release/tortoisehg/windows/tortoisehg-6.6.3-x64.msi</br>
+https://www.mercurial-scm.org/release/tortoisehg/windows/tortoisehg-6.6.3-x64.msi</br></br>
 https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=enterprise&channel=Release&version=VS2022&source=VSLandingPage&cid=2030:3b4d41295538415195deaab9b3b96c68</br>
 </br>
 四、Modify Source:</br>
