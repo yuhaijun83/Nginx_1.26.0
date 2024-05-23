@@ -16,6 +16,9 @@ https://www.openssl.org/source/openssl-3.0.13.tar.gz</br>
 https://zlib.net/zlib-1.3.1.tar.gz</br>
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.39/pcre2-10.39.tar.gz</br>
 </br>
+https://github.com/quictls/openssl/archive/refs/tags/openssl-3.0.13-quic1.zip</br>
+</br>
+</br>
 三、Build Tools:</br>
 https://github.com/msys2/msys2-installer/releases/download/2024-05-07/msys2-x86_64-20240507.exe</br>
 https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_53822_64bit/strawberry-perl-5.38.2.2-64bit.msi</br>
