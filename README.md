@@ -16,7 +16,7 @@ https://www.openssl.org/source/openssl-3.0.13.tar.gz</br>
 https://zlib.net/zlib-1.3.1.tar.gz</br>
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.39/pcre2-10.39.tar.gz</br>
 </br>
-https://github.com/quictls/openssl/archive/refs/tags/openssl-3.0.13-quic1.zip</br>
+https://github.com/quictls/openssl/archive/refs/tags/openssl-3.0.13-quic1.tar.gz</br>
 </br>
 </br>
 三、Build Tools:</br>
